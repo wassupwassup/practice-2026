@@ -489,3 +489,87 @@ content: "";
     background-position: center;
     background-repeat: no-repeat;
 }
+
+        .journal-post {
+            margin-bottom: 40px;
+        }
+        
+        .post-image-container {
+            width: 100%;
+            height: 250px;
+            background: #1A1E2B;
+            border: 1px solid var(--accent-neon-cyan);
+            margin: 15px 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .post-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+            transition: transform 0.3s ease;
+        }
+        
+        .post-image-container img:hover {
+            transform: scale(1.05);  
+        }
+        
+        .post-image-container.contain-img img {
+            object-fit: contain;
+            background: #0B0D0F;
+        }
+        
+        .post-image-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-neon-purple);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #1A1E2B 0%, #0F1117 100%);
+        }
+        
+        .tags {
+            display: flex;
+            gap: 8px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: var(--bg-panel);
+            color: var(--accent-neon-cyan);
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            border: 1px solid var(--accent-neon-cyan);
+            border-radius: 2px;
+            font-family: 'Fira Code', monospace;
+        }
+        
+        .journal-date {
+            color: var(--text-terminal);
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+        
+        .journal-title {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.3rem;
+            color: var(--accent-neon-cyan);
+            margin-bottom: 10px;
+        }
+        
+        .journal-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-top: 10px;
+        }
